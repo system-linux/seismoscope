@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <title>SeismoRadar - Web App</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"> <!-- CSS dosyasını bağlama -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+</head>
+<body>
+    
+    <div class="ortala">
+    <img src="https://cdn.discordapp.com/attachments/1153730509252337746/1159917591888920727/Adsz_tasarm.png?ex=6532c470&is=65204f70&hm=b29ca234dedcf44b8530b13bd11205f9f073103cddb476f0b985236c7ef40657&" alt="Logo" width="150" height="150">
+    <h1 class="custom-heading">SeismoScope V0.1</h1>
+    <p class="custom-font">Monitoring and Analysis of Earthquakes.</p>
+    </div>
+
+    <div class="container2">
+      <div class="left-content">
+        <div class="panel">
+          <h2>Map</h2>
+
+          <select id="mapSelect" name="mapselect">
+            <option value="map1">Son Depremler Haritası</option>
+            <option value="map2">Canlı Deprem Haritası</option>
+            <option value="map3">Deprem Risk Haritası</option>
+          </select>
+          <label id ="input-label" for="sondepremsayi">En son kaç deprem gösterilsin</label><input type="number" name="sondepremsayi" id='inputSonDeprem' placeholder='En son kaç deprem gösterilsin' >
+          <button type="submit" id="sondeprembutton">Göster</button>
+          <button id="refresh-button">Refresh Map</button>
+          <div id="map"></div>
+        </div>
+      </div>
+      <div class="right-content">
+        
+        <div class="panel3" id="lastEarthquakes">
+          <h2>En Son Oluşan Depremler</h2>
+          <input type="search" id="search" name="search" placeholder="Search City...">
+          <input type="submit" value="Search">
+        </div>
+        <div class="ortala">
+          <p>©️2023 - TechCrafters Team</p>
+        </div>
+      </div>
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+      <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
+      <script src="{% static 'jq.min.js' %}"></script>
+      <script src="{% static "script.js" %}"></script>
+</body>
+</html>

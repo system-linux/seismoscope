@@ -1,0 +1,170 @@
+#map { height: 400px; }
+#inputSonDeprem, #input-label,#sondeprembutton {
+  display: block;
+}
+.ortala {
+    text-align: center; /* Yatayda ortalama */
+}
+.horizontal-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid #cccccc00;
+}
+.vertical-container {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  padding: 20px;
+  border: 1px solid #cccccc00;
+  background-color: #f0f0f000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Product Sans, sans-serif;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap; /* Satırlara geçince yeni satıra at */
+}
+
+.left-content {
+  width: 100%; /* Sol tarafın genişliği, küçük ekranlarda tam genişlikte olacak */
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box; /* padding ve border dahil kutu genişliğini belirle */
+}
+
+.right-content {
+  flex: 1; /* Sağ tarafın genişliği, sol taraftan daha büyük */
+  background-color: #e0e0e0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .left-content {
+    flex: 2;
+  }
+
+  .right-content {
+    width: 30%; /* Sol tarafın genişliği büyük ekranlarda 30% */
+  }
+}
+
+
+.custom-button:hover {
+    background-color: #2980b9; /* Fare üzerine gelindiğinde arka plan rengi */
+}
+
+.panel {
+  border: 1px solid #ccc; /* Panel kenarlığı */
+  padding: 20px; /* Panel iç boşluğu */
+  background-color: #c3c3c3; /* Panel arka plan rengi */
+  border-radius: 10px; /* Panel kenar yuvarlaklığı */
+  width: 800px; /* Panel genişliği */
+  margin: 20px auto; /* Paneli sayfanın ortasına al */
+  height: 500px;
+  
+}
+
+.panel2 {
+ 
+  padding: 10px; /* Panel iç boşluğu */
+  background-color: #ffffff; /* Panel arka plan rengi */
+  border-radius: 10px; /* Panel kenar yuvarlaklığı */
+  width: 200px; /* Panel genişliği */
+  height: 40px;
+  margin: 15px auto; /* Paneli sayfanın ortasına al */
+  font-size: 10px; /* Başlık font boyutu */
+  color: rgb(0, 0, 0)
+  
+}
+
+
+.panel3 {
+  border: 1px solid #ccc; /* Panel kenarlığı */
+  padding: 20px; /* Panel iç boşluğu */
+  background-color: #000000; /* Panel arka plan rengi */
+  border-radius: 10px; /* Panel kenar yuvarlaklığı */
+  width: 250px; /* Panel genişliği */
+  margin: 20px auto; /* Paneli sayfanın ortasına al */
+  height: 500px;
+  overflow-y: auto;
+  color: rgb(255, 255, 255);
+}
+
+.panel4 {
+  border: 1px solid #ccc; /* Panel kenarlığı */
+  padding: 20px; /* Panel iç boşluğu */
+  background-color: #000000; /* Panel arka plan rengi */
+  border-radius: 10px; /* Panel kenar yuvarlaklığı */
+  width: 50px; /* Panel genişliği */
+  margin: 20px auto; /* Paneli sayfanın ortasına al */
+  height: 500px;
+  overflow-y: auto;
+  color: rgb(255, 255, 255);
+}
+.panel h2 {
+  font-size: 1.5em; /* Başlık font boyutu */
+  margin-bottom: 10px; /* Başlık alt boşluğu */
+  
+}
+
+.panel3 h2 {
+  font-size: 1.25em; /* Başlık font boyutu */
+  margin-bottom: 10px; /* Başlık alt boşluğu */
+}
+
+#toggleBtn {
+    padding: 10px;
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+    text-align: right;
+}
+  
+#menuContent {
+    display: none;
+}  
+#menuContent ul {
+    list-style: none;
+    padding: 0;
+}
+  
+#menuContent li {
+    margin-bottom: 10px;
+}
+  
+#menuContent a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Genel stil tanımlamaları */
+  
+  /* Küçük#map { height: 400px; } ekranlar için (mobil) */
+@media (max-width: 767px) {
+    /* Stil tanımlamaları burada */
+}
+  
+  /* Orta boy ekranlar için (tablet) */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Stil tanımlamaları burada */
+}
+  
+  /* Büyük ekranlar için (bilgisayar) */
+@media (min-width: 992px) {
+    /* Stil tanımlamaları burada */
+}

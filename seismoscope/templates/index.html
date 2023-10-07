@@ -1,0 +1,55 @@
+{% load static %}
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <title>SeismoRadar - Web App</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"> <!-- CSS dosyasını bağlama -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap">
+
+</head>
+<body>
+    
+    <div class="ortala">
+    <img src="https://cdn.discordapp.com/attachments/1153730509252337746/1159917591888920727/Adsz_tasarm.png?ex=6532c470&is=65204f70&hm=b29ca234dedcf44b8530b13bd11205f9f073103cddb476f0b985236c7ef40657&" alt="Logo" width="150" height="150">
+    <h1 class="custom-heading">SeismoScope V0.1</h1>
+    <p class="custom-font">Monitoring and Analysis of Earthquakes.</p>
+    </div>
+
+    <div class="container2">
+      <div class="left-content">
+        <div class="panel">
+          <h2>Map</h2>
+
+            <select name="mapselect">
+            <option value="map1">Deprem Fay Haritası</option>
+           <option value="map2">Canlı Deprem Haritası</option>
+            <option value="map3">Deprem Risk Haritası</option>
+          </select>
+
+        </div>
+      </div>
+      <div class="right-content">
+        
+        <div class="panel3">
+          <h2>En Son Oluşan Depremler</h2>
+          <input type="search" id="search" name="search" placeholder="Search City...">
+          <input type="submit" value="Search">
+          <div class="panel2">
+            <h2>Ankara 3.0</h2>
+          </div>
+          <div class="panel2">
+            <h2>Alanya 3.1</h2>
+          </div>
+        </div>
+        <div class="ortala">
+          <p>©️2023 - TechCrafters Team</p>
+        </div>
+      </div>
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
